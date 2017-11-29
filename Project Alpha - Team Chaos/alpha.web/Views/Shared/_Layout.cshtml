@@ -40,10 +40,11 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2017 Vinbolaget</p>
-        </footer>
+        
     </div>
+    <footer>
+        <p>&copy; 2017 Vinbolaget</p>
+    </footer>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -68,4 +69,5 @@
 
     @RenderSection("Scripts", required: false)
 </body>
+
 </html>
