@@ -35,9 +35,13 @@
     }
 }
 
-footer{
+footer {
     color: white;
     background-color: #3F403F;
     padding: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
