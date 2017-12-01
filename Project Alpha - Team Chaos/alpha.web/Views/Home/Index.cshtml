@@ -54,7 +54,7 @@
     </a>
 </div>
 
-<div class="row col-md-12">
+<div class="col-md-12">
     <div>
         <h2>Vinbolaget</h2>
         <p>
@@ -75,13 +75,11 @@
         </p>
     </div>*@
     
-</div>
 <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hitta butiker
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li>@Html.ActionLink("Närbutiken", "Store")</li>
-    <li>@Html.ActionLink("Långtifrån Livs", "Store")</li>
-    <li>@Html.ActionLink("Mittemellan", "Store")</li>
-  </ul>
+    <button class="dropbtn">Hitta butiker</button>
+    <div class="dropdown-content">
+        @Html.ActionLink("Närbutiken", "Store")
+        @Html.ActionLink("Långtifrån Livs", "Store")
+        @Html.ActionLink("Mittemellan", "Store")
+    </div>
 </div>
