@@ -80,11 +80,12 @@
 
 footer {
     color: white;
-    background-color: #3F403F;
-    padding: 20px;
-    position: absolute;
+    background-color: #222222;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
+    height: 50px;
+    line-height: 50px;
 }
 
