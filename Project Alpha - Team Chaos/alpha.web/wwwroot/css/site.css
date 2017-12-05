@@ -1,17 +1,18 @@
-﻿html {
+﻿html, body {
     margin: 0;
     height: 100%;
+    width: 100%
 }
 
 body {
     padding-top: 50px;
-    height: 100%;
     position: relative;
     text-align: center;
-    margin: 0;
     background-color: lightgrey;
-
     
+}
+.btn-primary{
+    background-color: green;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -20,6 +21,10 @@ body {
 
 .navbar-inverse .navbar-nav > li > a:hover {
     color: lightgrey;
+}
+
+#collapseExample {
+    background-color: #f2f2f2;
 }
 .dropbtn {
     background-color: green;
@@ -69,7 +74,7 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-    height: 1000px;
+    height: 150%;
     background-color: white;
     
 
