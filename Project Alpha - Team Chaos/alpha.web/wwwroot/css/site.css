@@ -9,22 +9,29 @@ body {
     position: relative;
     text-align: center;
     background-color: lightgrey;
+    height: 130%;
     
 }
-.btn-primary{
+
+.btn-primary {
     background-color: green;
+    border: none;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: white;
+.btn-primary:visited {
+    background-color: none;
+}
+.btn-primary:active:hover {
+    background-color: darkgreen;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: lightgrey;
+.btn-primary:hover {
+    background-color: darkgreen;
+    border: none;
 }
 
 #collapseExample {
-    background-color: #f2f2f2;
+
 }
 .dropbtn {
     background-color: green;
