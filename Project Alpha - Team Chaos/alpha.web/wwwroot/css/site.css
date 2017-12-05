@@ -14,7 +14,13 @@ body {
     
 }
 
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
 
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: lightgrey;
+}
 .dropbtn {
     background-color: green;
     color: white;
