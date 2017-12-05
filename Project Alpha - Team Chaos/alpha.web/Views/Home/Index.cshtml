@@ -79,14 +79,38 @@
             </p>
         </div>*@
 
-    <div class="dropdown">
+    @*<div class="dropdown">
         <button class="dropbtn">Hitta butiker</button>
         <div class="dropdown-content">
             @Html.ActionLink("Närbutiken", "Store")
             @Html.ActionLink("Långtifrån Livs", "Store")
             @Html.ActionLink("Mittemellan", "Store")
         </div>
+    </div>*@
+
+
+    <div class="storeBrowse">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Hitta butiker
+        </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <ul class="rolldown-list" id="myList">
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                    <li>Five</li>
+                    <li>Six</li>
+                    <li>Seven</li>
+                    <li>Eight</li>
+                </ul> 
+            </div>
+        </div>
     </div>
+
+
 </div>
 
 
