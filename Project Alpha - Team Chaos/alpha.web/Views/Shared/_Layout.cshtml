@@ -33,12 +33,18 @@
                         position:relative;
                         top: -10px;
                     }
+
+                    .navbar-brand {
+                        transform: translateX(-50%);
+                        left: 50%;
+                        position: absolute;
+                    }
                 </style>
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><img class="images" src="~/images/vinbolaget-icon.png" alt=""></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Hem</a></li>
+                 
                   
                 </ul>
             </div>
