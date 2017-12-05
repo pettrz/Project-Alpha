@@ -9,16 +9,25 @@ body {
     position: relative;
     text-align: center;
     background-color: lightgrey;
-    height: 150%;
+    height: 130%;
     
 }
-.btn-primary{
+
+.btn-primary {
     background-color: green;
+    border: none;
+}
+
+.btn-primary:visited {
+    background-color: none;
+}
+.btn-primary:active:hover {
+    background-color: darkgreen;
 }
 
 .btn-primary:hover {
     background-color: darkgreen;
-    border-color: none;
+    border: none;
 }
 
 #collapseExample {
