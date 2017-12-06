@@ -26,7 +26,6 @@ body {
     }
 
 #myInput {
-    background-image: url('searchicon.png');
     background-position: 14px 12px;
     background-repeat: no-repeat;
     font-size: 16px;
@@ -44,6 +43,7 @@ body {
     position: absolute;
     background-color: #f6f6f6;
     min-width: 230px;
+    text-align:left;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
