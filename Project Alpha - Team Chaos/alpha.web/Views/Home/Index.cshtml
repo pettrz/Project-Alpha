@@ -3,6 +3,8 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+
+
 <div class="bg">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
         <ol class="carousel-indicators">
@@ -82,35 +84,50 @@
         </div>*@
 
     @*<div class="dropdown">
-        <button class="dropbtn">Hitta butiker</button>
-        <div class="dropdown-content">
-            @Html.ActionLink("Närbutiken", "Store")
-            @Html.ActionLink("Långtifrån Livs", "Store")
-            @Html.ActionLink("Mittemellan", "Store")
-        </div>
-    </div>*@
-
-
-    <div class="storeBrowse">
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Hitta butiker
-        </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <ul class="rolldown-list" id="myList">
-                    <li>One</li>
-                    <li>Two</li>
-                    <li>Three</li>
-                    <li>Four</li>
-                    <li>Five</li>
-                    <li>Six</li>
-                    <li>Seven</li>
-                    <li>Eight</li>
-                </ul> 
+            <button class="dropbtn">Hitta butiker</button>
+            <div class="dropdown-content">
+                @Html.ActionLink("Närbutiken", "Store")
+                @Html.ActionLink("Långtifrån Livs", "Store")
+                @Html.ActionLink("Mittemellan", "Store")
             </div>
+        </div>*@
+
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Hitta butik</button>
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Sök.." id="myInput" onkeyup="filterFunction()">
+            <a href="/home/store">About</a>
+            <a href="/home/store">Base</a>
+            <a href="/home/store">Blog</a>
+            <a href="/home/store">Contact</a>
+            <a href="/home/store">Custom</a>
+            <a href="/home/store">Support</a>
+            <a href="/home/store">Tools</a>
         </div>
     </div>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 
 
 </div>
@@ -119,4 +136,3 @@
 <footer>
     <p>&copy; 2017 Vinbolaget</p>
 </footer>
-
