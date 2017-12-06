@@ -10,16 +10,19 @@ namespace alpha.web.Controllers
 {
     public class HomeController : Controller
     {
+        Repository _repo = Repository.GetRepo;
+
         public IActionResult Index()
         {
-            return View();
+            
+            return View(_repo.Stores);
         }
 
         public IActionResult Store()
         {
             ViewData["Message"] = "Butikens sortiment";
 
-            return View();
+            return View(_repo.Products);
         }
 
         public IActionResult About()
