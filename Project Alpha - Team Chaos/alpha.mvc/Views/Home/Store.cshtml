@@ -1,17 +1,14 @@
-﻿
+﻿@model IEnumerable<alpha.mvc.Models.Product>
+
 @{
-    Layout = null;
+    ViewBag.Title = "Butik";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
+<ul>
+    @foreach (Product p in Model)
+    {
+        <li>@p.Title</li>
+    }
+</ul>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Store</title>
-</head>
-<body>
-    <div> 
-    </div>
-</body>
-</html>
