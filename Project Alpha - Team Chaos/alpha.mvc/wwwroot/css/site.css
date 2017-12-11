@@ -7,9 +7,12 @@
 body {
     padding-top: 50px;
     position: relative;
-    text-align: center;
     background-color: lightgrey;
     height: 130%;
+}
+
+.assortment{
+    padding-top: 50px;
 }
 
 .dropbtn {
@@ -19,6 +22,7 @@ body {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    width: 250px;
 }
 
     .dropbtn:hover {
@@ -33,9 +37,10 @@ body {
     border: none;
 }
 
+
 .dropdown {
     position: relative;
-    display: inline-block;
+    
 }
 
 .dropdown-content {
@@ -43,10 +48,12 @@ body {
     position: absolute;
     background-color: #f6f6f6;
     min-width: 230px;
+    max-width: 250px;
     text-align: left;
-    overflow: auto;
+    overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+
 }
 
     .dropdown-content a {
@@ -57,7 +64,8 @@ body {
     }
 
 .dropdown a:hover {
-    background-color: #ddd
+    background-color: #ddd;
+    text-decoration: none;
 }
 
 .show {
