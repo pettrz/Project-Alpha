@@ -93,6 +93,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Models\products.xml" />
+    <Content Include="Models\productsmin.xml" />
+    <Content Include="Models\stock.xml" />
+    <Content Include="Models\stores.xml" />
     <Content Include="Web.config" />
     <Content Include="wwwroot\css\site.css" />
     <Content Include="wwwroot\images\products_thumbnail.jpg" />
@@ -153,6 +157,7 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Repository.cs" />
     <Compile Include="Models\Store.cs" />
+    <Compile Include="Models\XMLParse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -207,7 +212,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>7570</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
