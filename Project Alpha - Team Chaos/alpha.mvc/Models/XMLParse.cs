@@ -17,14 +17,34 @@ namespace alpha.mvc.Models
                 foreach (XElement level2Element in level1Element.Elements())
                 {
                     if (level2Element.Name == "Artikelid")
-                        p.Id = level2Element.Value;
+                        p.Id = Convert.ToInt32(level2Element.Value);
                     else if (level2Element.Name == "Namn")
                         p.Title = level2Element.Value;
                     else if (level2Element.Name == "Prisinklmoms")
-                        p.Price = level2Element.Value;
+                        p.Price = Convert.ToDouble(level2Element.Value.Replace('.',','));
                 }
                 products.Add(p);
             }
         }
+
+        //Fix Parse that takes Store-list
+
+        //public static void Parse(List<Store> stores)
+        //{
+        //    foreach (XElement level1Element in XElement.Load(HttpContext.Current.Server.MapPath("~/Models/productsmin.xml")).Elements("artikel"))
+        //    {
+        //        Store s = new Store();
+        //        foreach (XElement level2Element in level1Element.Elements())
+        //        {
+        //            if (level2Element.Name == "Artikelid")
+        //                p.Id = Convert.ToInt32(level2Element.Value);
+        //            else if (level2Element.Name == "Namn")
+        //                p.Title = level2Element.Value;
+        //            else if (level2Element.Name == "Prisinklmoms")
+        //                p.Price = Convert.ToDouble(level2Element.Value.Replace('.', ','));
+        //        }
+        //        stores.Add(s);
+        //    }
+        //}
     }
 }
