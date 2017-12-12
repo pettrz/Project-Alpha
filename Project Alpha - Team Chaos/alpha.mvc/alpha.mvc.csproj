@@ -97,6 +97,7 @@
     <Content Include="Models\productsmin.xml" />
     <Content Include="Models\stock.xml" />
     <Content Include="Models\stores.xml" />
+    <Content Include="Models\storesmin.xml" />
     <Content Include="Web.config" />
     <Content Include="wwwroot\css\site.css" />
     <Content Include="wwwroot\images\products_thumbnail.jpg" />
@@ -166,6 +167,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Store.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\StoreList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

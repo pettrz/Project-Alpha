@@ -21,5 +21,10 @@ namespace alpha.mvc.Controllers
         {
             return View(_repo.Products);
         }
+
+        public ActionResult StoreList()
+        {
+            return View(_repo.Stores);
+        }
     }
 }
