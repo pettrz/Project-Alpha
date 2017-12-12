@@ -114,6 +114,7 @@
     <Content Include="wwwroot\images\wine_4.jpg" />
     <Content Include="wwwroot\images\wine_6.jpg" />
     <Content Include="wwwroot\images\wine_9.jpg" />
+    <Content Include="wwwroot\js\dropdown.js" />
     <Content Include="wwwroot\js\site.js" />
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css">

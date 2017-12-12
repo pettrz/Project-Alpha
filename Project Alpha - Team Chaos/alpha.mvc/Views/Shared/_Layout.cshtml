@@ -8,7 +8,6 @@
     <environment include="Development">
         <link rel="stylesheet" href="~/wwwroot/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/wwwroot/css/site.css" />
-        <link rel="stylesheet" href="~/wwwroot/css/rolldown.css" />
         <link rel="icon" href="~/wwwroot/images/vinbolaget-favicon.png" />
     </environment>
     <environment exclude="Development">
@@ -40,12 +39,12 @@
                         position: absolute;
                     }
                 </style>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><img class="images" src="~/wwwroot/images/vinbolaget-icon.png" alt=""></a>
+                <a asp-area="" asp-controller="Home" href="/home" class="navbar-brand"><img class="images" src="~/wwwroot/images/vinbolaget-icon.png" alt=""></a>
             </div>
         </div>
     </nav>
 
-    <div class="container body-content">
+    <div class="container">
 
         @RenderBody()
     </div>
@@ -55,6 +54,7 @@
     <environment include="Development">
         <script src="~/wwwroot/lib/jquery/dist/jquery.js"></script>
         <script src="~/wwwroot/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/wwwroot/js/dropdown.js"></script>
         <script src="~/wwwroot/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
