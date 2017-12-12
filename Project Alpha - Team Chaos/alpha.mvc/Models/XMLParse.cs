@@ -11,19 +11,20 @@ namespace alpha.mvc.Models
     {
         public static void Parse(List<Product> products)
         {
-            foreach (XElement level1Element in XElement.Load(HttpContext.Current.Server.MapPath("~/Models/productsmin.xml")).Elements("artikel"))
-            {
-                Product p = new Product();
-                foreach (XElement level2Element in level1Element.Elements())
+            foreach (XElement level1Element in XElement.Load(HttpContext.Current.Server.MapPath("~/Models/products.xml")).Elements("artikel"))
+            {  
+                if (level1Element.Element("Varugrupp").Value.Contains("vin") && 
+                    100 < Convert.ToDouble(level1Element.Element("Prisinklmoms").Value.Replace('.',',')) &&
+                    Convert.ToDouble(level1Element.Element("Prisinklmoms").Value.Replace('.', ','))<110)
                 {
-                    if (level2Element.Name == "Artikelid")
-                        p.Id = Convert.ToInt32(level2Element.Value);
-                    else if (level2Element.Name == "Namn")
-                        p.Title = level2Element.Value;
-                    else if (level2Element.Name == "Prisinklmoms")
-                        p.Price = Convert.ToDouble(level2Element.Value.Replace('.', ','));
+                    products.Add(new Product()
+                    {
+                        Id = level1Element.Element("Artikelid").Value,
+                        Price = Convert.ToDouble(level1Element.Element("Prisinklmoms").Value.Replace('.', ',')),
+                        Type = level1Element.Element("Varugrupp").Value,
+                        Title = level1Element.Element("Namn").Value
+                    });
                 }
-                products.Add(p);
             }
         }
 
