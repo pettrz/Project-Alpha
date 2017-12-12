@@ -14,7 +14,7 @@ namespace alpha.mvc.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View(_repo.Stores);
+            return View(_repo.Products);
         }
 
         public ActionResult Store()
