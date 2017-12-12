@@ -1,4 +1,4 @@
-﻿@model IEnumerable<alpha.mvc.Models.Product>
+﻿@model IEnumerable<alpha.mvc.Models.Store>
 
 
 @{
@@ -110,27 +110,34 @@
                 </div>
             </div>
             <div class="col-md-9 productList">
-                <ul class="list-inline">
-                    <li class="list-inline-item"><h2>Butik</h2></li>
-                    <li class="list-inline-item">Vara</li>
-                    <li class="list-inline-item">Pris</li>
-                </ul>
+               
 
-                <div class="col-md-9" style="border:none;">
+                    <table class="table table-striped" style="table-layout: fixed">
+                        <thead>
+                            <tr>
+                                <th>Butik   </th>
+                                <th>Vara</th>
+                                <th>Pris</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                @foreach (var p in Model)
+                                {
+                                <tr>
+                                    <td>@p.Title</td>
+                                    <td>@p.Price</td>
+                                    </tr>
+                                    }
 
-                    <ul class="list-inline">
-                        @foreach (var p in Model)
-                        {
-                            <li class="list-inline-item">@p.Title</li>
-                            <li class="list-inline-item">@p.Price</li>
-                        }
+   
+                        </tbody>
 
-                    </ul>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 <footer class="text-center">
     <p>&copy; 2017 Vinbolaget</p>
