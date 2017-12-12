@@ -26,6 +26,25 @@ namespace alpha.mvc.Models
                     });
                 }
             }
-        } 
+        }
+
+        public static void Parse(List<Store> stores)
+        {
+            foreach (XElement level1Element in XElement.Load(HttpContext.Current.Server.MapPath("~/Models/stores.xml")).Elements("ButikOmbud"))
+            {
+                if (level1Element.Element("Typ").Value == "Butik")
+                {
+                    stores.Add(new Store()
+                    {
+                        Id = level1Element.Element("Nr").Value,
+                        Street = level1Element.Element("Address1").Value,
+                        City = level1Element.Element("Address4").Value,
+                        PostCode = level1Element.Element("Address3").Value,
+                        Type = level1Element.Element("Typ").Value
+                    });
+
+                }
+            }
+        }
     }
 }

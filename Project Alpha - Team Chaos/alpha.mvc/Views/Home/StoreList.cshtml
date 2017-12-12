@@ -1,0 +1,13 @@
+﻿@model List<alpha.mvc.Models.Store>
+
+@{
+    ViewBag.Title = "Butiker";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul>
+    @foreach (var s in Model)
+    {
+        <li>@s.Type @s.Street  @s.City  @s.PostCode </li>
+    }
+</ul>
