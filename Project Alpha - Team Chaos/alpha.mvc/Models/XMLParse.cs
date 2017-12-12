@@ -13,17 +13,24 @@ namespace alpha.mvc.Models
         {
             foreach (XElement level1Element in XElement.Load(HttpContext.Current.Server.MapPath("~/Models/productsmin.xml")).Elements("artikel"))
             {
-                Product p = new Product();
-                foreach (XElement level2Element in level1Element.Elements())
+                Product p;
+                if (level1Element.Element("Varugrupp").Value.Contains("vin"))
                 {
-                    if (level2Element.Name == "Artikelid")
-                        p.Id = Convert.ToInt32(level2Element.Value);
-                    else if (level2Element.Name == "Namn")
-                        p.Title = level2Element.Value;
-                    else if (level2Element.Name == "Prisinklmoms")
-                        p.Price = Convert.ToDouble(level2Element.Value.Replace('.',','));
+                    p = new Product();
+                    foreach (XElement level2Element in level1Element.Elements())
+                    {
+
+                        if (level2Element.Name == "Artikelid")
+                            p.Id = Convert.ToInt32(level2Element.Value);
+                        else if (level2Element.Name == "Namn")
+                            p.Title = level2Element.Value;
+                        else if (level2Element.Name == "Prisinklmoms")
+                            p.Price = Convert.ToDouble(level2Element.Value.Replace('.', ','));
+                        else if (level2Element.Name == "Varugrupp")
+                            p.Type = level2Element.Value;
+                    }
+                    products.Add(p);
                 }
-                products.Add(p);
             }
         }
 
