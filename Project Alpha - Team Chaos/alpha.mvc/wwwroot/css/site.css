@@ -10,6 +10,19 @@ body {
     background-color: lightgrey;
     height: 130%;
 }
+table {
+
+}
+tr{
+
+}
+th, td {
+
+    width: 100%;
+}
+tr {
+    width: 100%;
+}
 
 .assortment {
 
