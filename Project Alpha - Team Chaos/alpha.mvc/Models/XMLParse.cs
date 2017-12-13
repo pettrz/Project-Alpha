@@ -42,7 +42,6 @@ namespace alpha.mvc.Models
                         PostCode = level1Element.Element("Address3").Value,
                         Type = level1Element.Element("Typ").Value
                     });
-
                 }
             }
         }

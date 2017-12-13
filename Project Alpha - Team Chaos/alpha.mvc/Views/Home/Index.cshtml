@@ -1,4 +1,4 @@
-﻿@model IEnumerable<alpha.mvc.Models.Store>
+﻿@model alpha.mvc.Models.Repository
 
 
 @{
@@ -100,44 +100,45 @@
                 <button onclick="myFunction()" class="dropbtn">Hitta butik</button>
                 <div id="myDropdown" class="dropdown-content">
                     <input type="text" placeholder="Sök.." id="myInput" onkeyup="filterFunction()">
-                 
-                        @foreach (var p in Model)
-                        {
-                            <a href="" class="list-inline-item">@p.Street</a>
-                        }
 
-                  
+                    @foreach (var s in Model.Stores)
+                    {
+                        <a href="" class="list-inline-item">@s.Street</a>
+                        System.Diagnostics.Debug.WriteLine(s.Street);
+                    }
+
+
                 </div>
             </div>
             <div class="col-md-9 productList">
-               
 
-                    <table class="table table-striped" style="table-layout: fixed">
-                        <thead>
+
+                <table class="table table-striped" style="table-layout: fixed">
+                    <thead>
+                        <tr>
+                            <th>Butik   </th>
+                            <th>Vara</th>
+                            <th>Pris</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var p in Model.Products)
+                        {
                             <tr>
-                                <th>Butik   </th>
-                                <th>Vara</th>
-                                <th>Pris</th>
+                                <td>@p.Title</td>
+                                <td>@p.Price</td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            
-                                @foreach (var p in Model)
-                                {
-                                <tr>
-                                    <td>@p.Title</td>
-                                    <td>@p.Price</td>
-                                    </tr>
-                                    }
+                        }
 
-   
-                        </tbody>
 
-                    </table>
-                </div>
+                    </tbody>
+
+                </table>
             </div>
         </div>
     </div>
+</div>
 
 <footer class="text-center">
     <p>&copy; 2017 Vinbolaget</p>
