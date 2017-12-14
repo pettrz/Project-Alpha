@@ -50,7 +50,7 @@ thead {
 }
 
 .dropbtn {
-    background-color: #3e8e41;
+    background-color: #841717;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -60,7 +60,7 @@ thead {
 }
 
     .dropbtn:hover {
-        background-color: darkgreen;
+        background-color: #9b1818;
     }
 
 #myInput {
@@ -89,6 +89,13 @@ thead {
     height: 448px;
 
 }
+.containerColor{
+    background-color: white;
+}
+
+.backgroundColor{
+    background-color: white;
+}
 
     .dropdown-content a {
         color: black;
@@ -100,6 +107,7 @@ thead {
 .dropdown a:hover {
     background-color: #ddd;
     text-decoration: none;
+    color: #841717;
 }
 
 #productList{
