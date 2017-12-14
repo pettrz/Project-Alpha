@@ -11,18 +11,15 @@ body {
     height: 130%;
 }
 table {
-
-}
-tr{
-
+     height: 500px;
 }
 th, td {
-
     width: 100%;
 }
 tr {
     width: 100%;
 }
+
 
 .assortment {
 
@@ -30,6 +27,7 @@ tr {
 
 }
 .productList {
+    overflow-y: scroll;
     background-color: #f6f6f6;
     height: 100%;
     margin-bottom: -250px;
