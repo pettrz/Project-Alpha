@@ -30,8 +30,11 @@ namespace alpha.mvc.Models
 
         public static void Parse(List<Store> stores)
         {
+
             foreach (XElement level1Element in XElement.Load(HttpContext.Current.Server.MapPath("~/Models/stores.xml")).Elements("ButikOmbud"))
             {
+                
+
                 if (level1Element.Element("Typ").Value == "Butik")
                 {
                     stores.Add(new Store()
@@ -44,6 +47,7 @@ namespace alpha.mvc.Models
                     });
                 }
             }
+
         }
     }
 }
