@@ -98,12 +98,12 @@
         <div class=" col-md-12 assortment">
             <div class="col-md-3 dropdown">
                 <button onclick="myFunction()" class="dropbtn">Hitta butik</button>
-                <div id="myDropdown" class="dropdown-content">
+                <div id="myDropdown" class="dropdown-content" onclick="myFunctions()">
                     <input type="text" placeholder="Sök.." id="myInput" onkeyup="filterFunction()">
 
                     @foreach (var s in Model.Stores)
                     {
-                        <a href="" class="list-inline-item">@s.Street</a>
+                        <a class="list-inline-item">@s.Street</a>
                         System.Diagnostics.Debug.WriteLine(s.Street);
                     }
 
@@ -134,10 +134,25 @@
                     </tbody>
 
                 </table>
+                <script>
+                  function myFunctions() {
+                      var x = document.getElementById("productList");
+                      if (x.style.display === "block") {
+                          x.style.display = "none";
+                      } else {
+                          x.style.display = "block";
+                      }
+                  }
+                </script>
             </div>
+           
         </div>
     </div>
 </div>
+
+<br />
+<br />
+<br />
 
 <footer class="text-center">
     <p>&copy; 2017 Vinbolaget</p>

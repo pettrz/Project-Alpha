@@ -26,7 +26,6 @@ tbody, thead tr {
     table-layout: fixed;
 }
 
-
 thead {
     display: block;
     position: sticky;
@@ -102,6 +101,11 @@ thead {
     background-color: #ddd;
     text-decoration: none;
 }
+
+#productList{
+    display:none;
+}
+
 
 .show {
     display: block;
