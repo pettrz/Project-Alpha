@@ -110,13 +110,12 @@
 
                 </div>
             </div>
-            <div class="col-md-9 productList">
+            <div class="col-md-9" id="productList">
 
 
-                <table class="table table-striped" style="table-layout: fixed">
-                    <thead>
+                <table class="table table-striped table-fixed" style="table-layout: fixed">
+                    <thead class="fixed">
                         <tr>
-                            <th>Butik   </th>
                             <th>Vara</th>
                             <th>Pris</th>
                         </tr>
@@ -127,7 +126,7 @@
                         {
                             <tr>
                                 <td>@p.Title</td>
-                                <td>@p.Price</td>
+                                <td>@p.Price kr</td>
                             </tr>
                         }
 
