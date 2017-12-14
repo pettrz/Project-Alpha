@@ -35,6 +35,10 @@ namespace alpha.mvc.Models
         {
             get
             {
+
+                products = products.OrderBy(p => p.Price)
+                .ToList();
+
                 return products;
             }
         }
