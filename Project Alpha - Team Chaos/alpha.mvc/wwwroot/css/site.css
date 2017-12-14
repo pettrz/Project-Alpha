@@ -13,20 +13,37 @@ body {
 table {
      height: 500px;
 }
+
 th, td {
     width: 100%;
 }
 tr {
     width: 100%;
 }
+tbody, thead tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
 
 
+thead {
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: #f6f6f6;
+}
+
+* {
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
 .assortment {
 
     height: 500px;
 
 }
-.productList {
+#productList {
     overflow-y: scroll;
     background-color: #f6f6f6;
     height: 100%;
