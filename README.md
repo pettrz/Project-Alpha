@@ -1,20 +1,48 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Project-Alpha
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Webbsida skapad för att hitta viner tillgängliga på Systembolaget. Inriktad för en mer folklig och medelklassig folkgrupp.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+### Min roll i Project-Alpha
+ 
+ Jag gjorde en stor del av gränsnittet här, och arbetade tillsammans i C# med mina teammedlemmar. 
+ 
+ Mina ansvar och arbetsuppgifter:
+ 
+ * Responsiv, tillgänglig för alla enheter
+ * Ha en bra användarupplevelse, anpassad till folklig och medelklassig folkgrupp
+ * En bra, lätt och simpel navigering.
+ * Kontinuerligt förbättra, rensa eller förenkla kod.
+ * Användargränsnitt
+ * Sortering och sökfunktion
+ * Delvist arbeta med att hämta API och skriva ut.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+ 
+ 
+ ### Språk och bibliotek
+ 
+ Dessa språk och bibliotek har jag använt mig av i ADMIN.
+ 
+Språk  |
+------------- |
+HTML5  |
+CSS3  |
+JavaScript  |
+C#  |
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Bibliotek & tekniker|
+------------- |
+[Knockout.js](http://knockoutjs.com/)  |
+MVC  |
+
+
+Övriga verktyg & Metodik |
+------------- |
+Adobe Photoshop  |
+[Lucidchart](https://www.lucidchart.com/) (Wireframes)  |
+[Slack](https://www.slack.com/) (Kommunikationskanal) |
+[Trello](https://www.trello.com/) (Kommunikation med kund) |
+Visual Studio 2017 (Textredigerare) |
+Visual Studio Team Services |
+
+
+ 
