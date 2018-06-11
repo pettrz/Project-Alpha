@@ -45,5 +45,11 @@ Adobe Photoshop  |
 Visual Studio 2017 (Textredigerare) |
 Visual Studio Team Services |
 
+### Tillgänglighet
+
+Sidan är ej tillgänglig online. 
+
+Här är ett bildalbum: https://imgur.com/a/Y8a3fPc
+
 
  
