@@ -14,7 +14,7 @@ Webbsida skapad för att hitta viner tillgängliga på Systembolaget. Inriktad f
  * Kontinuerligt förbättra, rensa eller förenkla kod.
  * Användargränsnitt
  * Sortering och sökfunktion
- * Delvist arbeta med att hämta API och skriva ut.
+ * Delvist arbeta med att hämta API och skriva ut innehållet.
 
  
  
